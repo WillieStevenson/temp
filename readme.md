@@ -9,7 +9,7 @@ Please follow the below instructions to set this project locally.
 
 ### Prerequisites
 
-NOTE: This project was built and tested in the following environment, your milage may vary (as docker operates with different dependencies on different kernel and OS versions).
+NOTE: This project was built and tested in the following environment, your milage may vary (as docker operates with different dependencies on different kernel and OS versions). The following are required installations to run the project.
 
 - OS: Debian
 - Kernel Version: 5.10
@@ -17,17 +17,17 @@ NOTE: This project was built and tested in the following environment, your milag
 * docker 
   The instructions found [here](https://docs.docker.com/engine/install/debian/) were used to install docker for the above environment.
 
-* python
+* docker-compose
+  Installation instructions found [here](https://docs.docker.com/compose/install/).
 
-* flask (python micro web framework)
-
-* geoip2 (python pip install for maxmind's geoip API web service and DBs)
 
 ### Installation 
 
+1. Download this repository.
+2. Verify docker and docker-compose are installed.
+3. Download the GeoLite2-City.mmdb database from Maxmind [here](https://www.maxmind.com/en/geolite2/signup?lang=en) and place it into the `./app/static/` directory.
 
-
-
+This should be all that is required to get started.
 
 ## Usage
 
