@@ -38,13 +38,13 @@ def index():
 
 				messages.append({'status': "Data", 'message': "Latitude: {}, Longitude: {} ".format(response.location.latitude, response.location.longitude)})
 
-				return render_template("index.html", messages=messages)
+				return render_template("index.html", messages=messages), 200
 			else:
 				# invalid ip, return 400
 				messages.append({'status': "Failure", 'message': "Please enter a valid IP."})
-				return render_template("index.html", messages=messages)
+				return render_template("index.html", messages=messages), 400
 		except:
 			messages.append({'status': "Failure", 'message': "Please enter a valid IP."})
-			return render_template("index.html", messages=messages)
+			return render_template("index.html", messages=messages), 400
 	else:
 		return render_template("index.html")
