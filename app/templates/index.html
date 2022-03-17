@@ -12,6 +12,12 @@
 
         	<button type="submit">Submit</button>
         </form>
+
+        {% for message in messages %}
+            <div class='message'>
+                <p><b>{{ message['title'] }}:</b> {{ message['content'] }}</p>
+            </div>
+        {% endfor %}
     </div>
 </body>
 </html>
