@@ -42,7 +42,29 @@ If wanting to add additional code to this project, this can also be achieved. If
 
 Upon deploying, the docker-compose debug log will state the IP the web app will run on and the port, which is set to 5000 in the docker-compose file i.e. `http://<IP>:5000`.
 
+## Testing
 
+Tests are located in `app/tests/`.
+
+There are two ways to run tests.
+
+A. 
+  1. Start the container instance with `docker-compose up` from the root of the project directory. 
+
+  2. In another terminal window, run `docker ps` to obtain the container id of the running instance.
+
+  3. Get shell access within the container by running `docker exec -it <CONTAINER_ID> sh`. This will drop you into the root of the project inside of the container.
+
+  4. Run `pytest`
+
+B. (Optional)
+  1. Start the container instance with `docker-compose up` from the root of the project directory. Note down the exposed IP.  
+
+  2. On your local system, have `pip` installed and download the following packages like so: `pip install requests && pip install pytest && pip install coverage`.
+
+  3. Modify the `app/tests/test_strings.py` file by replacing each occurrence of localhost with with the exposed IP from step one.
+
+  4. Run `pytest` within project folder.
 
 
 ## Other
