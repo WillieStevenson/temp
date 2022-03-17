@@ -1,3 +1,4 @@
 Flask
 geoip2
 pytest
+coverage
