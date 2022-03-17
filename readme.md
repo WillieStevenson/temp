@@ -29,7 +29,7 @@ NOTE: This project was built and tested in the following environment, your milag
 
 This should be all that is required to get started.
 
-## Usage""
+## Usage
 
 The following commands can be used to deploy, interact, or work with the container.
 
@@ -40,6 +40,7 @@ If wanting to deploy the container instance as a daemon, `docker-compose up -d` 
 
 If wanting to add additional code to this project, this can also be achieved. If you have already built the project once, `docker-compose up --build --force-recreate` can be used to rebuild the project and deploy in one command.
 
+Upon deploying, the docker-compose debug log will state the IP the web app will run on and the port, which is set to 5000 in the docker-compose file i.e. `http://<IP>:5000`.
 
 
 
