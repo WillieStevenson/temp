@@ -1,2 +1,5 @@
 Flask
 geoip2
+pytest
+coverage
+requests
