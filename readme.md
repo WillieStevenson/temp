@@ -31,6 +31,18 @@ This should be all that is required to get started.
 
 ## Usage
 
+The following commands can be used to deploy, interact, or work with the container.
+
+`docker-compose up` can be used to build and start the container (for the first time)
+`docker-compose down` can be used to stop the container
+
+If wanting to deploy the container instance as a daemon, `docker-compose up -d` can be used. However, since there is no default hosting ip specified in the docker-compose file, one would need to specify it before launching this command.
+
+If wanting to add aditional code to this project, this can also be achieved. If you have already built the project once, `docker-compose up --build --force-recreate` can be used to rebuild the project and deploy in one command.
+
+
+
+
 
 ## Acknowledgements
 
