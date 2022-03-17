@@ -29,7 +29,7 @@ NOTE: This project was built and tested in the following environment, your milag
 
 This should be all that is required to get started.
 
-## Usage
+## Usage""
 
 The following commands can be used to deploy, interact, or work with the container.
 
@@ -44,5 +44,15 @@ If wanting to add additional code to this project, this can also be achieved. If
 
 
 
-## Acknowledgements
+## Other
+
+Other improvements can be made, such as the following, but were not specified as part of the project requirements:
+
+- The addition of a self signed ssl cert, to secure traffic between client and server (especially so given that there is form input).
+
+- The ability to run on a more production-esque, fault tolerant server, such as NGINX using the uwsgi deployment option.
+
+- Under normal circumstances, Flask would not be used for production grade services - as it is a micro framework, but was fitting for this small project.
+
+- Several others come to mind, but were not necessarily part of the project scope and can be discussed later.
 
