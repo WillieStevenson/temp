@@ -9,7 +9,7 @@ Please follow the below instructions to set this project locally.
 
 ### Prerequisites
 
-NOTE: This project was built and tested in the following environment, your milage may vary (as docker operates with different dependencies on different kernel and OS versions). The following are required installations to run the project.
+NOTE: This project was built and tested in the following environment, your mileage may vary (as docker operates with different dependencies on different kernel and OS versions). The following are required installations to run the project.
 
 - OS: Debian
 - Kernel Version: 5.10
@@ -38,9 +38,9 @@ The following commands can be used to deploy, interact, or work with the contain
 
 If wanting to deploy the container instance as a daemon, `docker-compose up -d` can be used. However, since there is no default hosting IP specified in the docker-compose file, one would need to specify it before launching this command.
 
-If wanting to add additional code to this project, this can also be achieved. If you have already built the project once, `docker-compose up --build --force-recreate` can be used to rebuild the project and deploy in one command.
+If wanting to add additional code to this project, this can also be achieved. If you have already built the project once, `docker-compose up --build --force-recreate` can be used to rebuild the project and deploy it in one command. Make sure the existing container has been stopped by running `docker compose down`.
 
-Upon deploying, the docker-compose debug log will state the IP the web app will run on and the port, which is set to 5000 in the docker-compose file i.e. `http://<IP>:5000`.
+Upon deploying, the docker-compose debug log will state the IP the web app will run on as well as the port, which is set to 5000 in the docker-compose file i.e. `http://<IP>:5000`.
 
 ## Testing
 
