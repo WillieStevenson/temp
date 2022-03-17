@@ -1,5 +1,4 @@
 from flask import render_template
-from app import app
 
 from flask import Flask
 from flask import request
@@ -11,7 +10,6 @@ import socket
 import geoip2.database
 
 app = Flask(__name__)
-from app import views
 
 
 @app.route('/', methods=('GET', 'POST'))
