@@ -17,6 +17,11 @@ NOTE: This project was built and tested in the following environment, your milag
 * docker 
   The instructions found [here](https://docs.docker.com/engine/install/debian/) were used to install docker for the above environment.
 
+* python
+
+* flask (python micro web framework)
+
+* geoip2 (python pip install for maxmind's geoip API web service and DBs)
 
 ### Installation 
 
